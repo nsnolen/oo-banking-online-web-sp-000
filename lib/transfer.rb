@@ -10,6 +10,9 @@ class Transfer
 
   def valid?
     sender.valid? && receiver.valid?
+  end
 
+  def execute_transaction
+    if valid? receiver.deposit << sender.amount
   end
 end
