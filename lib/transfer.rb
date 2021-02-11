@@ -13,7 +13,7 @@ class Transfer
   end
 
   def execute_transaction
-    if valid? then receiver.deposit << sender.amount
+    if valid? then receiver << sender.amount
     end
   end
 end
