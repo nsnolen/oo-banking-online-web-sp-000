@@ -18,7 +18,7 @@ class Transfer
       receiver.deposit(self.amount)
       self.status = "complete"
     else
-      status = "rejected"
+      self.status = "rejected"
       "Transaction rejected. Please check your account balance."
     end
   end
